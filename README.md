@@ -1,134 +1,387 @@
+
 <div align="center">
 
 # 🎓 CampusOS
 
 ### College Course & Student Management System
 
-**One workspace for students, courses, and academic progress.**
+**A Modern Academic Management Experience, Built with React**
 
-`REACT 19` · `VITE 8` · `JAVASCRIPT` · `CSS3` · `LOCALSTORAGE`
+An interactive, responsive, and user-friendly web application designed to simplify student records, course management, and attendance tracking.
 
-[🚀 Get started](#-quick-start) · [🛠 Tech stack](#-technology-stack) · [✨ Features](#-features) · [📸 Screenshots](#-screenshots) · [✅ Tests](#-testing)
+<br/>
 
-**GSFC University** · Computer Science & Engineering · Semester 5
+![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-8-20232A?style=for-the-badge&logo=vite&logoColor=FFC107)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-20232A?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![CSS3](https://img.shields.io/badge/CSS3-Responsive-20232A?style=for-the-badge&logo=css&logoColor=FF8C00)
+
+<br/>
+
+![Project](https://img.shields.io/badge/Project-CampusOS-FF8C00?style=flat-square)
+![Category](https://img.shields.io/badge/Category-Education-blue?style=flat-square)
+![Frontend](https://img.shields.io/badge/Architecture-Frontend--Only-success?style=flat-square)
+![Storage](https://img.shields.io/badge/Storage-LocalStorage-yellow?style=flat-square)
+
+<br/>
+
+**Advanced Web Technology | Fast Learner Assignment**
+
+**GSFC University · Computer Science & Engineering · Semester 5**
+
+<br/>
+
+[Overview](#-project-overview) •
+[Features](#-key-features) •
+[Tech Stack](#-technology-stack) •
+[Installation](#-getting-started) •
+[Screenshots](#-application-screenshots) •
+[Testing](#-testing--quality-assurance)
 
 </div>
-
-![CampusOS dashboard](college-management-system/screenshots/01-dashboard.png)
-
-A complete, responsive academic workspace built for the **Advanced Web Technology Fast Learner assignment at GSFC University**. Manage students and courses, track attendance eligibility, and keep records between browser sessions in a black-and-orange liquid-glass interface.
-
-| 🎓 Students | 📚 Courses | 🚦 Attendance | 💾 Persistence |
-| :---: | :---: | :---: | :---: |
-| Add, edit, search & organize | Manage curriculum & enrollment | Clear eligibility at a glance | Records stay after refresh |
-
-> **Designed for everyday clarity.** Dark glass panels, orange accents, a subtle technical grid, and layouts that adapt from desktop to mobile.
 
 ---
 
-## ✨ Features
-
-- **Live dashboard:** total students, total courses, active courses, average attendance, and the five most recently added students.
-- **Student management:** add, edit, delete with confirmation, search by name/enrollment/email, combine search with course filtering, and view individual profiles.
-- **Course management:** add, edit, search, filter by status, view enrollment, and delete unassigned courses. Assigned courses are protected against deletion.
-- **Validated forms:** required fields, unique enrollment numbers and course codes (case-insensitive), email format, existing course selection, semesters 1–8, and attendance 0–100.
-- **Attendance status:** consistent, labeled badges calculated through a shared utility.
-- **Persistent records:** browser localStorage with visible failure warnings. Deleting all records keeps the directory empty after refresh.
-- **Responsive interface:** desktop sidebar, mobile navigation drawer, scrollable tables, stacked forms, keyboard-operable dialogs, visible focus, reduced-motion support, and glass-effect fallback.
-- **Real interactions:** no backend, login, paid APIs, or placeholder pages.
-
-## 🛠 Technology stack
+## 📸 Project Preview
 
 <div align="center">
 
-**⚛️ React · ⚡ Vite · 🟨 JavaScript · 🎨 CSS3**
+<img src="college-management-system/screenshots/01-dashboard.png" alt="CampusOS Dashboard" width="100%"/>
 
-*A focused frontend stack, from reusable components to persistent browser data.*
+<br/>
+
+**Modern Academic Dashboard — Black & Orange Liquid Glass UI**
 
 </div>
 
-### 🖥️ Application & interface
+---
 
-| Technology | Role in CampusOS | Used for |
-| :--- | :--- | :--- |
-| **React.js 19 + React DOM** | User interface | Reusable components, student tables, course cards, and interactive forms |
-| **JavaScript ES6+** | Application logic | Validation, CRUD operations, array transformations, and attendance calculations |
-| **JSX + HTML5** | Page structure | Declarative templates, semantic forms, tables, and dialogs |
-| **CSS3** | Visual design | Black-and-orange liquid glass, design tokens, Grid, Flexbox, and responsive layouts |
-| **React Router DOM 7** | Navigation | Dashboard, student/course directories, and dynamic detail routes |
-| **Lucide React** | Iconography | Consistent navigation icons and action controls |
+## 📖 Project Overview
 
-### 🧠 State & browser data
+**CampusOS** is a modern college course and student management application developed using React.js, JavaScript, Vite, and CSS3.
 
-| React concept / browser API | Purpose |
-| :--- | :--- |
-| **useState** | Records, controlled inputs, search, filters, and dialogs |
-| **useEffect** | Storage synchronization, dialog lifecycle, and notification cleanup |
-| **useMemo + React.memo** | Reuse derived calculations and skip unchanged component renders |
-| **useRef + useId** | Dialog references and accessible title identifiers |
-| **localStorage** | Persist student and course arrays between browser sessions |
+The application provides a centralized academic workspace where users can manage student information, organize courses, monitor attendance eligibility, and view academic statistics through an intuitive dashboard.
 
-> **Data stays in your browser.** CampusOS uses localStorage rather than a backend or database. Records are specific to the browser and site origin.
+The main objective is to demonstrate modern React development concepts through a practical, fully interactive Single Page Application (SPA).
 
-### ⚙️ Development & quality tools
+### 🎯 Project Objectives
+
+- Develop a complete React-based academic management interface.
+- Implement student and course CRUD functionality.
+- Design reusable and maintainable React components.
+- Implement client-side form validation.
+- Demonstrate React Hooks and component communication.
+- Create an interactive academic dashboard.
+- Preserve application data using browser localStorage.
+- Provide a responsive interface across devices.
+- Implement client-side routing and dynamic detail pages.
+- Apply a consistent black-and-orange liquid glass design.
+
+### 💡 What Makes CampusOS Different?
+
+| Feature | Description |
+|:---|:---|
+| 🎨 Modern UI | Black and orange liquid-glass design |
+| ⚛️ React Architecture | Reusable functional components and React Hooks |
+| 📊 Live Dashboard | Automatically calculated academic statistics |
+| 🎓 Student Management | Complete CRUD operations and searchable records |
+| 📚 Course Management | Course creation, modification, and enrollment information |
+| 🚦 Attendance Tracking | Automatic attendance eligibility classification |
+| 💾 Browser Persistence | Data preserved between page refreshes |
+| 📱 Responsive Layout | Adaptive desktop, tablet, and mobile interface |
+| 🧩 Modular Code | Organized components, pages, utilities, and styles |
+| 🔒 Data Validation | Field validation and duplicate prevention |
+
+---
+
+## ✨ Key Features
+
+### 📊 01 — Interactive Dashboard
+
+The dashboard provides an overview of important academic information.
+
+**Dashboard includes:**
+
+- Total registered students
+- Total available courses
+- Active courses
+- Average student attendance
+- Five recently added students
+- Dynamic statistics based on current records
+
+All dashboard statistics are calculated from application data.
+
+### 🎓 02 — Student Management
+
+Manage student records through an interactive student directory.
+
+| Functionality | Description |
+|:---|:---|
+| Add Student | Register students through a validated form |
+| View Students | Display all registered student records |
+| Edit Student | Update student information |
+| Delete Student | Remove students after confirmation |
+| Search Student | Search by name, enrollment number, or email |
+| Filter Students | Filter records by course |
+| Student Details | View individual student profiles |
+| Attendance Status | Display attendance classification |
+
+**Validation features:**
+
+- Required-field validation
+- Valid email format
+- Unique enrollment numbers
+- Case-insensitive duplicate detection
+- Semester selection from 1 to 8
+- Attendance percentage between 0 and 100
+- Valid course selection
+
+### 📚 03 — Course Management
+
+A centralized interface for managing academic courses.
+
+**Supported functionality:**
+
+- Add new courses
+- Edit existing courses
+- View course details
+- Search courses
+- Filter courses by status
+- View course enrollment information
+- Delete courses without assigned students
+- Prevent deletion of courses with assigned students
+- Validate unique course codes
+
+### 🚦 04 — Attendance Eligibility System
+
+CampusOS automatically evaluates student attendance.
+
+| Attendance Percentage | Status | Indicator |
+|:---:|:---:|:---:|
+| 75% – 100% | Eligible | 🟢 Green |
+| 60% – Below 75% | Warning | 🟡 Amber |
+| 0% – Below 60% | Detained | 🔴 Red |
+| Invalid Value | Invalid | 🔴 Red |
+
+Attendance calculations are handled through the shared `getAttendanceStatus()` utility.
+
+**Important boundaries:**
+
+- Exactly 75% = Eligible
+- Exactly 60% = Warning
+- Below 60% = Detained
+
+### 💾 05 — Persistent Data Management
+
+The application uses the browser's localStorage API.
+
+**Advantages:**
+
+- Student records remain after refreshing the page.
+- Course records remain between browser sessions.
+- No external database is required.
+- No backend server is required.
+- Records update immediately after changes.
+
+Storage failures are handled with visible warning messages.
+
+### 📱 06 — Responsive User Interface
+
+CampusOS adapts to multiple screen sizes.
+
+**Responsive features:**
+
+- Desktop sidebar navigation
+- Mobile navigation drawer
+- Responsive dashboard cards
+- Scrollable tables
+- Adaptive forms
+- Mobile-friendly dialogs
+- Keyboard-accessible interactions
+- Visible focus indicators
+- Reduced-motion support
+
+---
+
+## 🎨 UI/UX Design System
+
+CampusOS follows a modern **Dark Liquid Glass Design System**.
+
+The visual interface combines a dark background, orange accents, transparent panels, and subtle visual effects.
+
+### Color Palette
+
+| Color | Usage | Reference |
+|:---|:---|:---|
+| ⚫ Black | Primary application background | Dark theme |
+| 🟠 Orange | Primary accent and interactive elements | Brand accent |
+| ⚪ White | Main text and information | High contrast |
+| 🔘 Dark Gray | Secondary panels and surfaces | Supporting surfaces |
+| 🟢 Green | Eligible and success indicators | Positive status |
+| 🟡 Amber | Attendance warnings | Warning status |
+| 🔴 Red | Errors and detained status | Negative status |
+
+### Design Characteristics
+
+- Glassmorphism-inspired components
+- Semi-transparent surfaces
+- Subtle background grid
+- Rounded cards and dialogs
+- Smooth hover interactions
+- Consistent spacing and typography
+- Modern iconography
+- Responsive navigation
+- Accessible forms and controls
+
+The interface is created using custom CSS without Tailwind CSS, Bootstrap, or another UI framework.
+
+---
+
+## 🛠 Technology Stack
+
+<div align="center">
+
+### Core Technologies
+
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
+
+</div>
+
+### Frontend Technologies
+
+| Technology | Version / Type | Purpose |
+|:---|:---|:---|
+| React.js | 19 | Component-based user interface |
+| React DOM | 19 | Rendering React components |
+| Vite | 8 | Development server and build tool |
+| JavaScript | ES6+ | Application logic and event handling |
+| JSX | React Syntax | UI component structure |
+| HTML5 | Standard | Semantic page structure |
+| CSS3 | Standard | Styling, animations, and responsive layouts |
+| React Router DOM | 7 | Single Page Application routing |
+| Lucide React | Icon Library | Modern interface icons |
+
+### React Concepts Implemented
+
+| Concept | Implementation |
+|:---|:---|
+| Functional Components | Reusable application components |
+| JSX | Declarative component layouts |
+| Props | Component data and callback communication |
+| useState | State management and controlled forms |
+| useEffect | Storage synchronization and component effects |
+| useMemo | Optimized filtering and statistics |
+| useRef | References used by dialogs |
+| useId | Accessible component identifiers |
+| React.memo | Avoiding unnecessary component renders |
+| Event Handling | User interactions and form submissions |
+| Conditional Rendering | Dynamic UI states |
+| Array Methods | Filtering, searching, and calculations |
+
+### Development Tools
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square)
+![Oxlint](https://img.shields.io/badge/Oxlint-Code_Quality-orange?style=flat-square)
 
 | Tool | Purpose |
-| :--- | :--- |
-| **Vite 8 + React plugin** | Fast development server, React integration, and production builds |
-| **Node.js + npm** | Run development tools, install packages, and execute project scripts |
-| **Playwright** | Browser workflow checks and all 18 page/form screenshots |
-| **Node.js test runner** | Unit tests for attendance boundaries and storage behavior |
-| **Oxlint** | JavaScript and React source checks |
-| **Git + GitHub** | Version history and repository hosting |
+|:---|:---|
+| Node.js | JavaScript development environment |
+| npm | Dependency and package management |
+| Git | Version control |
+| GitHub | Source code hosting |
+| Playwright | Browser automation and testing |
+| Node.js Test Runner | Unit testing |
+| Oxlint | JavaScript and React code analysis |
 
-### 📦 Package files explained
+---
 
-These files support the stack and are committed alongside the application source:
+## 🏗 Application Architecture
 
-| File | What it contains | Why it matters |
-| :--- | :--- | :--- |
-| [**package.json**](college-management-system/package.json) | Project metadata, dependency version ranges, and scripts such as `dev`, `build`, and `test` | Defines which packages and commands the project needs |
-| [**package-lock.json**](college-management-system/package-lock.json) | Resolved dependency versions, dependency tree, and integrity information | Keeps dependency installation reproducible with `npm ci` |
-| [**vite.config.js**](college-management-system/vite.config.js) | Vite configuration and the React plugin | Connects the React source to the development/build pipeline |
+CampusOS uses a frontend-only Single Page Application architecture.
 
-**Useful distinction:** `package.json` declares dependencies; `package-lock.json` records their resolved versions. Both belong in the repository.
-
-**No TypeScript, Tailwind, Bootstrap, Sass, UI framework, Redux, database, or backend.**
-
-## 🚀 Quick start
-
-Use **Node.js 22.12+** and npm (verified here with Node.js 26.3.1).
-
-```bash
-git clone https://github.com/tirthgandhi/AWT-FAST-LEARNER-.git
-cd AWT-FAST-LEARNER-/college-management-system
-npm install
-npm run dev
+```text
+                 ┌──────────────────────┐
+                 │       CampusOS       │
+                 │    React Frontend    │
+                 └──────────┬───────────┘
+                            │
+                 ┌──────────▼───────────┐
+                 │     React Router     │
+                 └──────────┬───────────┘
+                            │
+           ┌────────────────┼────────────────┐
+           │                │                │
+     ┌─────▼─────┐    ┌─────▼─────┐    ┌─────▼─────┐
+     │ Dashboard │    │ Students  │    │  Courses  │
+     └─────┬─────┘    └─────┬─────┘    └─────┬─────┘
+           │                │                │
+           └────────────────┼────────────────┘
+                            │
+                 ┌──────────▼───────────┐
+                 │   React State &      │
+                 │   Business Logic     │
+                 └──────────┬───────────┘
+                            │
+                 ┌──────────▼───────────┐
+                 │  Browser localStorage│
+                 └──────────────────────┘
 ```
 
-Open the local URL printed by Vite, normally **http://localhost:5173**.
+### Architecture Highlights
 
-| Command | Purpose |
-|---|---|
-| `npm run dev` | Start development server |
-| `npm run build` | Create production output in `dist/` |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Check application and test source |
-| `npm run test:unit` | Test attendance boundaries and storage behavior |
-| `npm test` | Run browser workflows and regenerate screenshots |
+**Frontend Layer**
 
-For production hosting, serve `dist/` and configure an **SPA fallback to index.html** so direct visits to detail routes work. No hosting service is required for the assignment.
+React components handle application screens, forms, navigation, and user interactions.
 
-## 📂 Folder structure
+**Application Logic**
+
+JavaScript utilities manage validation, attendance calculations, searches, and data transformations.
+
+**Data Storage Layer**
+
+Browser localStorage stores student and course records.
+
+**Routing Layer**
+
+React Router provides navigation and dynamic detail routes without requiring full page reloads.
+
+> **Note:** CampusOS is a frontend-only academic application. It does not use a backend API, authentication system, or external database.
+
+---
+
+## 📂 Project Folder Structure
+
+The project follows a modular React application structure.
 
 ```text
 AWT-FAST-LEARNER-/
+│
 ├── README.md
 ├── TESTING.md
+│
 └── college-management-system/
-    ├── screenshots/              # All 18 browser captures
-    ├── public/favicon.svg
+    │
+    ├── public/
+    │   └── favicon.svg
+    │
+    ├── screenshots/
+    │   ├── 01-dashboard.png
+    │   ├── 02-students.png
+    │   ├── 03-student-details.png
+    │   ├── 04-courses.png
+    │   ├── 05-course-details.png
+    │   └── ... 13 additional screenshots
+    │
     ├── src/
+    │   │
     │   ├── components/
     │   │   ├── Navbar.jsx
     │   │   ├── DashboardCard.jsx
@@ -141,26 +394,34 @@ AWT-FAST-LEARNER-/
     │   │   ├── GlassPanel.jsx
     │   │   ├── Modal.jsx
     │   │   └── ConfirmDialog.jsx
+    │   │
     │   ├── pages/
     │   │   ├── Dashboard.jsx
     │   │   ├── Students.jsx
     │   │   ├── StudentDetails.jsx
     │   │   ├── Courses.jsx
     │   │   └── CourseDetails.jsx
-    │   ├── data/seedData.js
+    │   │
+    │   ├── data/
+    │   │   └── seedData.js
+    │   │
     │   ├── utils/
     │   │   ├── attendance.js
     │   │   └── storage.js
+    │   │
     │   ├── styles/
     │   │   ├── variables.css
     │   │   ├── global.css
     │   │   ├── glass.css
     │   │   └── responsive.css
+    │   │
     │   ├── App.jsx
     │   └── main.jsx
+    │
     ├── tests/
     │   ├── app.spec.js
     │   └── unit.test.js
+    │
     ├── .gitignore
     ├── .oxlintrc.json
     ├── index.html
@@ -171,133 +432,424 @@ AWT-FAST-LEARNER-/
     └── README.md
 ```
 
-## 🧩 React concepts demonstrated
+### Folder Responsibilities
 
-| Concept | Implementation |
-|---|---|
-| Functional components & JSX | All components and pages |
-| Props | Shared records and callbacks passed from App to pages |
-| useState | Records, controlled forms, filters, dialogs, feedback |
-| useEffect | Persistence, dialog lifecycle, notification timer cleanup |
-| useMemo | Dashboard statistics and filtered student/course lists |
-| React.memo | Student rows and dashboard cards skip unchanged props |
-| Event handling | Form submissions, searches, editing, deletion |
-| Array operations | map, filter, find, some, reduce, slice |
-| Conditional rendering | Empty states, dialogs, missing records, badges |
-| Routing | Active navigation and parameterized detail pages |
-
-Memoization is deliberately limited: filtering and statistics are derived only when their inputs change. Memoized rows can reuse unchanged records and stable state-setter callbacks. No global state library or complex caching layer is needed.
-
-## 🧭 Routes
-
-| Route | Screen |
-|---|---|
-| `/` | Redirects to dashboard |
-| `/dashboard` | Academic overview |
-| `/students` | Student directory and CRUD |
-| `/students/:id` | Student profile |
-| `/courses` | Course catalog and management |
-| `/courses/:id` | Course information and enrolled students |
-| Unknown path | Redirects to dashboard |
-| Unknown student/course ID | Record Not Found with a return link |
-
-## 🚦 Attendance rules
-
-| Percentage | Status | Badge |
-|---|---|---|
-| 75–100 | Eligible | Green |
-| 60–below 75 | Warning | Amber |
-| 0–below 60 | Detained | Red |
-| Invalid / out of range | Invalid | Red |
-
-Exactly **60 is Warning** and exactly **75 is Eligible**. Every attendance badge uses `getAttendanceStatus()`. Dashboard average is the arithmetic mean of all student percentages; an empty directory displays 0%.
-
-## 💾 Persistence contract
-
-- `college_students` stores the student array; `college_courses` stores the course array.
-- Sample data is used only when a key is absent or unreadable. A valid empty array stays empty.
-- New records use `crypto.randomUUID()`; editing keeps the same ID.
-- Browser storage failures show a persistent warning. The current session remains usable.
-- Malformed JSON or non-array storage is preserved for recovery instead of overwritten; the affected collection uses demonstration data in memory and does not persist until the storage issue is repaired and the page reloaded.
-- Data belongs to this browser and origin. It does not sync across devices. Clearing browser storage removes saved records. There is **no backend or authentication**.
-
-## ✅ Testing
-
-The project includes two Node unit tests and five Playwright browser workflows. Run:
-
-```bash
-npm run test:unit
-npx playwright install chromium
-npm test
-npm run lint
-npm run build
-```
-
-Browser tests start the development server automatically. They cover student create/edit/delete/cancel, duplicate enrollments, email and attendance validation, combined search/filtering, course create/edit/delete, assigned-course protection, detail pages, refresh persistence, empty arrays, invalid routes, malformed and denied storage, mobile navigation, and page overflow at mobile/tablet widths.
-
-The screenshot workflow covers all five page types plus forms, the missing-record state, and responsive layouts. Screenshots use deterministic sample records and are saved in the **college-management-system/screenshots/** folder. Tests also check for uncaught browser errors during student and screenshot workflows.
-
-**Verification:** installation, development-server startup, production build, both unit tests, and all five Chromium browser tests were executed successfully during implementation. See [verification notes](TESTING.md) for the final recorded check results. Browser coverage is Chromium; other browser engines have not been tested.
-
-## 📸 Screenshots
-
-**18 real browser captures · 5 application pages · Desktop, tablet & mobile**
-
-All images below come from the running application. The dashboard is featured at the top of this README; the remaining pages and forms appear below. Open any image to inspect the full-size capture.
-
-[Browse the screenshot folder](college-management-system/screenshots/)
-
-### Desktop pages
-
-| Student directory | Student details |
-|---|---|
-| ![Student directory](college-management-system/screenshots/02-students.png) | ![Student details](college-management-system/screenshots/03-student-details.png) |
-
-| Course catalog | Course details |
-|---|---|
-| ![Courses](college-management-system/screenshots/04-courses.png) | ![Course details](college-management-system/screenshots/05-course-details.png) |
-
-### Forms & record handling
-
-| Add student | Edit student |
-|---|---|
-| ![Add student](college-management-system/screenshots/06-add-student.png) | ![Edit student](college-management-system/screenshots/07-edit-student.png) |
-
-| Add course | Edit course |
-|---|---|
-| ![Add course](college-management-system/screenshots/08-add-course.png) | ![Edit course](college-management-system/screenshots/09-edit-course.png) |
-
-![Record Not Found](college-management-system/screenshots/10-record-not-found.png)
-
-### Mobile & tablet
-
-Responsive cards, a collapsible navigation drawer, and forms designed for smaller screens.
-
-| Dashboard | Students | Courses |
-|---|---|---|
-| ![Mobile dashboard](college-management-system/screenshots/11-mobile-dashboard.png) | ![Mobile students](college-management-system/screenshots/12-mobile-students.png) | ![Mobile courses](college-management-system/screenshots/13-mobile-courses.png) |
-
-| Student details | Course details |
-|---|---|
-| ![Mobile student details](college-management-system/screenshots/14-mobile-student-details.png) | ![Mobile course details](college-management-system/screenshots/15-mobile-course-details.png) |
-
-| Navigation drawer | Mobile form |
-|---|---|
-| ![Mobile navigation](college-management-system/screenshots/16-mobile-navigation.png) | ![Mobile form](college-management-system/screenshots/17-mobile-form.png) |
-
-![Tablet dashboard](college-management-system/screenshots/18-tablet-dashboard.png)
-
-## 🎓 Academic details
-
-| Field | Details |
-|---|---|
-| University | GSFC University |
-| Department | Computer Science and Engineering |
-| Semester | 5 |
-| Subject | Advanced Web Technology |
-| Assignment | Fast Learner |
-| Project | College Course & Student Management System |
+| Directory / File | Responsibility |
+|:---|:---|
+| `components/` | Shared React UI components |
+| `pages/` | Main application screens |
+| `data/` | Initial demonstration records |
+| `utils/` | Shared business logic and storage utilities |
+| `styles/` | Global styles and responsive design |
+| `tests/` | Unit and browser tests |
+| `screenshots/` | Application screenshots |
+| `App.jsx` | Main application composition |
+| `main.jsx` | React application entry point |
+| `vite.config.js` | Vite configuration |
+| `package.json` | Dependencies and npm scripts |
+| `package-lock.json` | Locked dependency versions |
 
 ---
 
-<div align="center">Designed for a focused, practical demonstration of modern React fundamentals.</div>
+## 🚀 Getting Started
+
+Follow these steps to run CampusOS locally.
+
+### Prerequisites
+
+Ensure that the following tools are installed:
+
+- Node.js **22.12 or later**
+- npm
+- Git
+- A modern web browser
+
+### Step 1 — Clone the Repository
+
+```bash
+git clone https://github.com/tirthgandhi/AWT-FAST-LEARNER-.git
+```
+
+### Step 2 — Navigate to the Project
+
+```bash
+cd AWT-FAST-LEARNER-/college-management-system
+```
+
+### Step 3 — Install Dependencies
+
+```bash
+npm install
+```
+
+This installs the required packages from `package.json`.
+
+### Step 4 — Start the Development Server
+
+```bash
+npm run dev
+```
+
+### Step 5 — Open the Application
+
+Open the development URL displayed in your terminal.
+
+Usually:
+
+```text
+http://localhost:5173/
+```
+
+The application should now be accessible in your browser.
+
+---
+
+## ⚙️ Available Commands
+
+| Command | Description |
+|:---|:---|
+| `npm install` | Install project dependencies |
+| `npm run dev` | Start the development server |
+| `npm run build` | Generate a production build |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run source code checks |
+| `npm run test:unit` | Execute unit tests |
+| `npm test` | Run Playwright browser tests |
+
+### Production Build
+
+```bash
+npm run build
+```
+
+Production-ready files are generated in the `dist/` directory.
+
+```bash
+npm run preview
+```
+
+This allows you to preview the production build locally.
+
+For deployment, the hosting provider must support an SPA fallback to `index.html` for direct access to dynamic routes.
+
+---
+
+## 🧭 Application Routes
+
+CampusOS uses React Router DOM for client-side navigation.
+
+| Route | Description |
+|:---|:---|
+| `/` | Redirect to dashboard |
+| `/dashboard` | Main academic dashboard |
+| `/students` | Student management |
+| `/students/:id` | Individual student profile |
+| `/courses` | Course management |
+| `/courses/:id` | Individual course information |
+
+**Additional routing behavior:**
+
+- Unknown URLs redirect to the dashboard.
+- Unknown student IDs display a Record Not Found state.
+- Unknown course IDs display a Record Not Found state.
+- Missing-record screens provide return navigation.
+
+---
+
+## 🗃 Data Storage & Persistence
+
+CampusOS uses the browser's built-in localStorage API.
+
+### Storage Keys
+
+| Storage Key | Description |
+|:---|:---|
+| `college_students` | Stores student records |
+| `college_courses` | Stores course records |
+
+### Persistence Behavior
+
+- Records are saved locally in the browser.
+- Saved data remains after refreshing the application.
+- New records use `crypto.randomUUID()`.
+- Editing a record preserves its existing ID.
+- Valid empty arrays remain empty after refresh.
+- Sample data is used when a storage key is missing or unreadable.
+- Storage errors display warning messages.
+- Invalid storage content is preserved for recovery instead of being automatically overwritten.
+
+### Limitations
+
+Because CampusOS uses localStorage:
+
+- Data is stored on the current browser and site origin.
+- Records do not synchronize between devices.
+- Clearing browser storage can remove saved records.
+- There is no centralized database.
+- There is no user authentication.
+
+This storage approach is suitable for demonstrating frontend concepts in an academic project.
+
+---
+
+## 🧪 Testing & Quality Assurance
+
+CampusOS includes automated tests to help verify application functionality.
+
+### Testing Technologies
+
+| Technology | Testing Purpose |
+|:---|:---|
+| Playwright | End-to-end browser workflows |
+| Node.js Test Runner | Unit tests |
+| Oxlint | Source code quality |
+| Vite | Production build verification |
+
+### Test Coverage
+
+**Student Management**
+
+- Student creation
+- Student editing
+- Student deletion
+- Deletion cancellation
+- Duplicate enrollment validation
+- Email validation
+- Attendance validation
+- Search and filtering
+
+**Course Management**
+
+- Course creation
+- Course modification
+- Course deletion
+- Assigned-course deletion protection
+- Detail-page navigation
+
+**Application Behavior**
+
+- localStorage persistence
+- Refresh behavior
+- Empty record collections
+- Invalid application routes
+- Malformed storage handling
+- Denied storage behavior
+- Responsive navigation
+- Mobile and tablet layout overflow
+
+### Run Unit Tests
+
+```bash
+npm run test:unit
+```
+
+### Install Playwright Browser
+
+```bash
+npx playwright install chromium
+```
+
+### Run Browser Tests
+
+```bash
+npm test
+```
+
+### Run Code Quality Checks
+
+```bash
+npm run lint
+```
+
+### Verify Production Build
+
+```bash
+npm run build
+```
+
+### Verification Summary
+
+| Verification | Recorded Result |
+|:---|:---|
+| Dependency installation | Successful |
+| Development server startup | Successful |
+| Production build | Successful |
+| Unit tests | 2 Passed |
+| Playwright browser workflows | 5 Passed |
+| Browser screenshot captures | 18 Generated |
+| Browser coverage | Chromium |
+
+These results describe the recorded implementation checks. Other browser engines have not been tested.
+
+See [TESTING.md](TESTING.md) for additional verification details.
+
+---
+
+## 🖼 Application Screenshots
+
+CampusOS includes **18 browser screenshots** demonstrating application pages, forms, and responsive layouts.
+
+### 01 — Academic Dashboard
+
+<div align="center">
+
+<img src="college-management-system/screenshots/01-dashboard.png" width="95%" alt="Academic Dashboard"/>
+
+*Academic overview with dynamic student and course statistics*
+
+</div>
+
+### 02 — Student Management
+
+| Student Directory | Student Details |
+|:---:|:---:|
+| <img src="college-management-system/screenshots/02-students.png" width="100%" alt="Student Directory"/> | <img src="college-management-system/screenshots/03-student-details.png" width="100%" alt="Student Details"/> |
+
+### 03 — Course Management
+
+| Course Directory | Course Details |
+|:---:|:---:|
+| <img src="college-management-system/screenshots/04-courses.png" width="100%" alt="Course Directory"/> | <img src="college-management-system/screenshots/05-course-details.png" width="100%" alt="Course Details"/> |
+
+### 04 — Student Forms
+
+| Add Student | Edit Student |
+|:---:|:---:|
+| <img src="college-management-system/screenshots/06-add-student.png" width="100%" alt="Add Student"/> | <img src="college-management-system/screenshots/07-edit-student.png" width="100%" alt="Edit Student"/> |
+
+### 05 — Course Forms
+
+| Add Course | Edit Course |
+|:---:|:---:|
+| <img src="college-management-system/screenshots/08-add-course.png" width="100%" alt="Add Course"/> | <img src="college-management-system/screenshots/09-edit-course.png" width="100%" alt="Edit Course"/> |
+
+### 06 — Record Not Found
+
+<div align="center">
+
+<img src="college-management-system/screenshots/10-record-not-found.png" width="85%" alt="Record Not Found"/>
+
+*Graceful handling of unavailable records*
+
+</div>
+
+### 07 — Mobile Experience
+
+| Dashboard | Students | Courses |
+|:---:|:---:|:---:|
+| <img src="college-management-system/screenshots/11-mobile-dashboard.png" width="100%" alt="Mobile Dashboard"/> | <img src="college-management-system/screenshots/12-mobile-students.png" width="100%" alt="Mobile Students"/> | <img src="college-management-system/screenshots/13-mobile-courses.png" width="100%" alt="Mobile Courses"/> |
+
+### 08 — Mobile Detail Pages
+
+| Student Profile | Course Details |
+|:---:|:---:|
+| <img src="college-management-system/screenshots/14-mobile-student-details.png" width="100%" alt="Mobile Student Profile"/> | <img src="college-management-system/screenshots/15-mobile-course-details.png" width="100%" alt="Mobile Course Details"/> |
+
+### 09 — Responsive Navigation & Forms
+
+| Mobile Navigation | Mobile Form |
+|:---:|:---:|
+| <img src="college-management-system/screenshots/16-mobile-navigation.png" width="100%" alt="Mobile Navigation"/> | <img src="college-management-system/screenshots/17-mobile-form.png" width="100%" alt="Mobile Form"/> |
+
+### 10 — Tablet Dashboard
+
+<div align="center">
+
+<img src="college-management-system/screenshots/18-tablet-dashboard.png" width="85%" alt="Tablet Dashboard"/>
+
+*Responsive dashboard layout for tablet-sized screens*
+
+</div>
+
+<div align="center">
+
+**[📁 Explore All Application Screenshots](college-management-system/screenshots/)**
+
+</div>
+
+---
+
+## 📘 Academic Concepts Demonstrated
+
+This project demonstrates important concepts from Advanced Web Technology.
+
+| Concept | Practical Implementation |
+|:---|:---|
+| Single Page Application | React Router navigation |
+| React Functional Components | Modular component architecture |
+| Props | Parent-to-child data communication |
+| State Management | React useState |
+| Lifecycle Effects | React useEffect |
+| Memoization | useMemo and React.memo |
+| Form Handling | Controlled forms |
+| Validation | Student and course validation |
+| Conditional Rendering | Dynamic badges, dialogs, and empty states |
+| Lists & Keys | Dynamic student and course collections |
+| CRUD Operations | Record creation, reading, updating, and deletion |
+| Browser Storage | localStorage persistence |
+| Responsive Design | CSS Grid, Flexbox, and media queries |
+| Event Handling | Search, filters, buttons, and forms |
+| Client-Side Routing | React Router DOM |
+| Unit Testing | Node.js Test Runner |
+| End-to-End Testing | Playwright |
+
+---
+
+## 🎓 Academic Information
+
+| Field | Details |
+|:---|:---|
+| **Project Name** | CampusOS |
+| **Project Type** | React Single Page Application |
+| **University** | GSFC University |
+| **Department** | Computer Science & Engineering |
+| **Semester** | 5 |
+| **Subject** | Advanced Web Technology |
+| **Assignment Category** | Fast Learner |
+| **Project Topic** | College Course & Student Management System |
+| **Frontend** | React.js, JavaScript, HTML5, CSS3 |
+| **Build Tool** | Vite |
+| **Data Storage** | Browser localStorage |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 🔗 Repository
+
+<div align="center">
+
+### Explore the Source Code
+
+**GitHub Repository**
+
+[![GitHub Repository](https://img.shields.io/badge/View%20on%20GitHub-CampusOS-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tirthgandhi/AWT-FAST-LEARNER-)
+
+**Repository Owner**
+
+[![GitHub Profile](https://img.shields.io/badge/GitHub-tirthgandhi-FF8C00?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tirthgandhi)
+
+</div>
+
+---
+
+<div align="center">
+
+### 🎓 CampusOS
+
+**A Smarter Way to Organize Academic Information**
+
+Built with React.js, powered by JavaScript, and designed with a modern liquid-glass interface.
+
+**Developed as part of the Advanced Web Technology Fast Learner Assignment**
+
+**GSFC University | Computer Science & Engineering**
+
+<br/>
+
+[⬆ Back to Top](#-campusos)
+
+<br/>
+
+**React · Vite · JavaScript · CSS3 · localStorage**
+
+</div>
