@@ -1,5 +1,11 @@
 # Verification results
 
+## Repository-root layout verification — 11 October 2026
+
+The application now runs directly from `D:\AWT-FAST-LEARNER-`. After moving it, `npm run lint`, `npm run build`, both unit tests, and all 8 browser tests passed (24.5 seconds for the browser suite). README local links were checked successfully. Run all npm commands from the repository root; screenshots are in `screenshots/`.
+
+## Earlier verification
+
 Executed on 10 October 2026 with Node.js 26.3.1, npm 11.5.2 and Playwright Chromium on Windows.
 
 On 11 October 2026, lint and both unit tests passed again, followed by all **8 browser tests in 25.6 seconds** using `PLAYWRIGHT_PORT=5199`. The new feature demonstrations generated screenshots 19–33. All 33 image links in each README resolve to existing files. The original build and installation results below are retained from 10 October.
@@ -12,7 +18,7 @@ On 11 October 2026, lint and both unit tests passed again, followed by all **8 b
 | npm run lint | Passed with no warnings after the final source check |
 | npm run test:unit | 2 passed |
 | npm test | 8 passed on 11 October; full run completed in 25.6 seconds |
-| Screenshot capture | 33 PNGs saved in college-management-system/screenshots/ |
+| Screenshot capture | 33 PNGs saved in screenshots/ |
 | Responsive checks | 390px mobile and 900px tablet: no page-level horizontal overflow |
 | Visual inspection | Desktop dashboard, students, courses, detail pages, mobile dashboard and mobile form reviewed |
 
@@ -34,4 +40,4 @@ On 11 October 2026, lint and both unit tests passed again, followed by all **8 b
 
 Browser automation used Chromium. Firefox, Safari and real mobile devices were not tested. Data is browser-local, with no backend, authentication or cross-device synchronization. Static hosting needs an index.html fallback for BrowserRouter routes.
 
-Run the documented commands in college-management-system/ to reproduce these checks. npm test also refreshes the screenshots from fresh sample data.
+Run the documented commands from the repository root to reproduce these checks. npm test also refreshes the screenshots from fresh sample data.

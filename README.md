@@ -46,7 +46,7 @@ An interactive, responsive, and user-friendly web application designed to simpli
 
 <div align="center">
 
-<img src="college-management-system/screenshots/01-dashboard.png" alt="CampusOS Dashboard" width="100%"/>
+<img src="screenshots/01-dashboard.png" alt="CampusOS Dashboard" width="100%"/>
 
 <br/>
 
@@ -363,73 +363,29 @@ The project follows a modular React application structure.
 
 ```text
 AWT-FAST-LEARNER-/
-│
+├── public/                    # Favicon and public assets
+├── screenshots/               # All 33 screenshots
+├── src/
+│   ├── components/            # Forms, cards, navigation, dialogs
+│   ├── pages/                 # Dashboard, students, courses, details
+│   ├── data/seedData.js
+│   ├── utils/                 # Attendance and localStorage helpers
+│   ├── styles/                # Tokens, glass styling, responsive CSS
+│   ├── App.jsx
+│   └── main.jsx
+├── tests/
+│   ├── app.spec.js
+│   ├── features.spec.js
+│   └── unit.test.js
+├── .gitignore
+├── .oxlintrc.json
+├── index.html
+├── package.json
+├── package-lock.json
+├── playwright.config.js
+├── vite.config.js
 ├── README.md
-├── TESTING.md
-│
-└── college-management-system/
-    │
-    ├── public/
-    │   └── favicon.svg
-    │
-    ├── screenshots/
-    │   ├── 01-dashboard.png
-    │   ├── 02-students.png
-    │   ├── 03-student-details.png
-    │   ├── 04-courses.png
-    │   ├── 05-course-details.png
-    │   └── ... 13 additional screenshots
-    │
-    ├── src/
-    │   │
-    │   ├── components/
-    │   │   ├── Navbar.jsx
-    │   │   ├── DashboardCard.jsx
-    │   │   ├── StudentCard.jsx
-    │   │   ├── StudentForm.jsx
-    │   │   ├── StudentTable.jsx
-    │   │   ├── CourseCard.jsx
-    │   │   ├── CourseForm.jsx
-    │   │   ├── AttendanceBadge.jsx
-    │   │   ├── GlassPanel.jsx
-    │   │   ├── Modal.jsx
-    │   │   └── ConfirmDialog.jsx
-    │   │
-    │   ├── pages/
-    │   │   ├── Dashboard.jsx
-    │   │   ├── Students.jsx
-    │   │   ├── StudentDetails.jsx
-    │   │   ├── Courses.jsx
-    │   │   └── CourseDetails.jsx
-    │   │
-    │   ├── data/
-    │   │   └── seedData.js
-    │   │
-    │   ├── utils/
-    │   │   ├── attendance.js
-    │   │   └── storage.js
-    │   │
-    │   ├── styles/
-    │   │   ├── variables.css
-    │   │   ├── global.css
-    │   │   ├── glass.css
-    │   │   └── responsive.css
-    │   │
-    │   ├── App.jsx
-    │   └── main.jsx
-    │
-    ├── tests/
-    │   ├── app.spec.js
-    │   └── unit.test.js
-    │
-    ├── .gitignore
-    ├── .oxlintrc.json
-    ├── index.html
-    ├── package.json
-    ├── package-lock.json
-    ├── playwright.config.js
-    ├── vite.config.js
-    └── README.md
+└── TESTING.md
 ```
 
 ### Folder Responsibilities
@@ -473,7 +429,7 @@ git clone https://github.com/tirthgandhi/AWT-FAST-LEARNER-.git
 ### Step 2 — Navigate to the Project
 
 ```bash
-cd AWT-FAST-LEARNER-/college-management-system
+cd AWT-FAST-LEARNER-
 ```
 
 ### Step 3 — Install Dependencies
@@ -693,7 +649,7 @@ CampusOS includes **33 browser screenshots** demonstrating application pages, fo
 
 <div align="center">
 
-<img src="college-management-system/screenshots/01-dashboard.png" width="95%" alt="Academic Dashboard"/>
+<img src="screenshots/01-dashboard.png" width="95%" alt="Academic Dashboard"/>
 
 *Academic overview with dynamic student and course statistics*
 
@@ -703,31 +659,31 @@ CampusOS includes **33 browser screenshots** demonstrating application pages, fo
 
 | Student Directory | Student Details |
 |:---:|:---:|
-| <img src="college-management-system/screenshots/02-students.png" width="100%" alt="Student Directory"/> | <img src="college-management-system/screenshots/03-student-details.png" width="100%" alt="Student Details"/> |
+| <img src="screenshots/02-students.png" width="100%" alt="Student Directory"/> | <img src="screenshots/03-student-details.png" width="100%" alt="Student Details"/> |
 
 ### 03 — Course Management
 
 | Course Directory | Course Details |
 |:---:|:---:|
-| <img src="college-management-system/screenshots/04-courses.png" width="100%" alt="Course Directory"/> | <img src="college-management-system/screenshots/05-course-details.png" width="100%" alt="Course Details"/> |
+| <img src="screenshots/04-courses.png" width="100%" alt="Course Directory"/> | <img src="screenshots/05-course-details.png" width="100%" alt="Course Details"/> |
 
 ### 04 — Student Forms
 
 | Add Student | Edit Student |
 |:---:|:---:|
-| <img src="college-management-system/screenshots/06-add-student.png" width="100%" alt="Add Student"/> | <img src="college-management-system/screenshots/07-edit-student.png" width="100%" alt="Edit Student"/> |
+| <img src="screenshots/06-add-student.png" width="100%" alt="Add Student"/> | <img src="screenshots/07-edit-student.png" width="100%" alt="Edit Student"/> |
 
 ### 05 — Course Forms
 
 | Add Course | Edit Course |
 |:---:|:---:|
-| <img src="college-management-system/screenshots/08-add-course.png" width="100%" alt="Add Course"/> | <img src="college-management-system/screenshots/09-edit-course.png" width="100%" alt="Edit Course"/> |
+| <img src="screenshots/08-add-course.png" width="100%" alt="Add Course"/> | <img src="screenshots/09-edit-course.png" width="100%" alt="Edit Course"/> |
 
 ### 06 — Record Not Found
 
 <div align="center">
 
-<img src="college-management-system/screenshots/10-record-not-found.png" width="85%" alt="Record Not Found"/>
+<img src="screenshots/10-record-not-found.png" width="85%" alt="Record Not Found"/>
 
 *Graceful handling of unavailable records*
 
@@ -737,25 +693,25 @@ CampusOS includes **33 browser screenshots** demonstrating application pages, fo
 
 | Dashboard | Students | Courses |
 |:---:|:---:|:---:|
-| <img src="college-management-system/screenshots/11-mobile-dashboard.png" width="100%" alt="Mobile Dashboard"/> | <img src="college-management-system/screenshots/12-mobile-students.png" width="100%" alt="Mobile Students"/> | <img src="college-management-system/screenshots/13-mobile-courses.png" width="100%" alt="Mobile Courses"/> |
+| <img src="screenshots/11-mobile-dashboard.png" width="100%" alt="Mobile Dashboard"/> | <img src="screenshots/12-mobile-students.png" width="100%" alt="Mobile Students"/> | <img src="screenshots/13-mobile-courses.png" width="100%" alt="Mobile Courses"/> |
 
 ### 08 — Mobile Detail Pages
 
 | Student Profile | Course Details |
 |:---:|:---:|
-| <img src="college-management-system/screenshots/14-mobile-student-details.png" width="100%" alt="Mobile Student Profile"/> | <img src="college-management-system/screenshots/15-mobile-course-details.png" width="100%" alt="Mobile Course Details"/> |
+| <img src="screenshots/14-mobile-student-details.png" width="100%" alt="Mobile Student Profile"/> | <img src="screenshots/15-mobile-course-details.png" width="100%" alt="Mobile Course Details"/> |
 
 ### 09 — Responsive Navigation & Forms
 
 | Mobile Navigation | Mobile Form |
 |:---:|:---:|
-| <img src="college-management-system/screenshots/16-mobile-navigation.png" width="100%" alt="Mobile Navigation"/> | <img src="college-management-system/screenshots/17-mobile-form.png" width="100%" alt="Mobile Form"/> |
+| <img src="screenshots/16-mobile-navigation.png" width="100%" alt="Mobile Navigation"/> | <img src="screenshots/17-mobile-form.png" width="100%" alt="Mobile Form"/> |
 
 ### 10 — Tablet Dashboard
 
 <div align="center">
 
-<img src="college-management-system/screenshots/18-tablet-dashboard.png" width="85%" alt="Tablet Dashboard"/>
+<img src="screenshots/18-tablet-dashboard.png" width="85%" alt="Tablet Dashboard"/>
 
 *Responsive dashboard layout for tablet-sized screens*
 
@@ -763,7 +719,7 @@ CampusOS includes **33 browser screenshots** demonstrating application pages, fo
 
 <div align="center">
 
-**[📁 Explore All Application Screenshots](college-management-system/screenshots/)**
+**[📁 Explore All Application Screenshots](screenshots/)**
 
 </div>
 
@@ -775,52 +731,52 @@ These screenshots show the controls in use and the resulting records. Deletions 
 
 | Requirement | Screenshot evidence |
 | :--- | :--- |
-| Display students | [Student directory](college-management-system/screenshots/19-display-students.png) |
-| Delete student | [Confirmation](college-management-system/screenshots/22-delete-student-confirmation.png) · [Successful deletion](college-management-system/screenshots/23-student-deleted.png) |
-| Search student | [Search for Priya](college-management-system/screenshots/20-search-student.png) |
-| Filter by course | [Advanced Web Technology students](college-management-system/screenshots/21-filter-students-by-course.png) |
-| Add course | [Completed form](college-management-system/screenshots/24-add-course-filled-form.png) · [New course in catalog](college-management-system/screenshots/25-course-added.png) |
-| Delete course | [Confirmation](college-management-system/screenshots/29-delete-course-confirmation.png) · [Successful deletion](college-management-system/screenshots/30-course-deleted.png) · [Assigned-course protection](college-management-system/screenshots/31-assigned-course-delete-protection.png) |
-| Search course | [Database search result](college-management-system/screenshots/26-search-course.png) |
-| Filter course | [Inactive courses](college-management-system/screenshots/27-filter-course.png) |
-| View course details | [Course and enrolled students](college-management-system/screenshots/28-view-course-details.png) |
-| Attendance warning | [69% — Warning](college-management-system/screenshots/32-attendance-warning.png) · [52% — Detained](college-management-system/screenshots/33-attendance-detained.png) |
+| Display students | [Student directory](screenshots/19-display-students.png) |
+| Delete student | [Confirmation](screenshots/22-delete-student-confirmation.png) · [Successful deletion](screenshots/23-student-deleted.png) |
+| Search student | [Search for Priya](screenshots/20-search-student.png) |
+| Filter by course | [Advanced Web Technology students](screenshots/21-filter-students-by-course.png) |
+| Add course | [Completed form](screenshots/24-add-course-filled-form.png) · [New course in catalog](screenshots/25-course-added.png) |
+| Delete course | [Confirmation](screenshots/29-delete-course-confirmation.png) · [Successful deletion](screenshots/30-course-deleted.png) · [Assigned-course protection](screenshots/31-assigned-course-delete-protection.png) |
+| Search course | [Database search result](screenshots/26-search-course.png) |
+| Filter course | [Inactive courses](screenshots/27-filter-course.png) |
+| View course details | [Course and enrolled students](screenshots/28-view-course-details.png) |
+| Attendance warning | [69% — Warning](screenshots/32-attendance-warning.png) · [52% — Detained](screenshots/33-attendance-detained.png) |
 
 #### Student operations
 
 | Display students | Search student |
 | :---: | :---: |
-| ![Student directory](college-management-system/screenshots/19-display-students.png) | ![Search student](college-management-system/screenshots/20-search-student.png) |
+| ![Student directory](screenshots/19-display-students.png) | ![Search student](screenshots/20-search-student.png) |
 
 | Filter by course | Delete confirmation |
 | :---: | :---: |
-| ![Filter students by course](college-management-system/screenshots/21-filter-students-by-course.png) | ![Delete student confirmation](college-management-system/screenshots/22-delete-student-confirmation.png) |
+| ![Filter students by course](screenshots/21-filter-students-by-course.png) | ![Delete student confirmation](screenshots/22-delete-student-confirmation.png) |
 
-![Student successfully deleted](college-management-system/screenshots/23-student-deleted.png)
+![Student successfully deleted](screenshots/23-student-deleted.png)
 
 #### Course operations
 
 | Add course form | Course added |
 | :---: | :---: |
-| ![Filled add course form](college-management-system/screenshots/24-add-course-filled-form.png) | ![Course added](college-management-system/screenshots/25-course-added.png) |
+| ![Filled add course form](screenshots/24-add-course-filled-form.png) | ![Course added](screenshots/25-course-added.png) |
 
 | Search course | Filter inactive courses |
 | :---: | :---: |
-| ![Search course](college-management-system/screenshots/26-search-course.png) | ![Filter course](college-management-system/screenshots/27-filter-course.png) |
+| ![Search course](screenshots/26-search-course.png) | ![Filter course](screenshots/27-filter-course.png) |
 
 | Course details | Delete confirmation |
 | :---: | :---: |
-| ![Course details](college-management-system/screenshots/28-view-course-details.png) | ![Delete course confirmation](college-management-system/screenshots/29-delete-course-confirmation.png) |
+| ![Course details](screenshots/28-view-course-details.png) | ![Delete course confirmation](screenshots/29-delete-course-confirmation.png) |
 
 | Course deleted | Assigned course protected |
 | :---: | :---: |
-| ![Course deleted](college-management-system/screenshots/30-course-deleted.png) | ![Assigned course deletion blocked](college-management-system/screenshots/31-assigned-course-delete-protection.png) |
+| ![Course deleted](screenshots/30-course-deleted.png) | ![Assigned course deletion blocked](screenshots/31-assigned-course-delete-protection.png) |
 
 #### Attendance warnings
 
 | Warning — attendance 69% | Detained — attendance 52% |
 | :---: | :---: |
-| ![Attendance warning](college-management-system/screenshots/32-attendance-warning.png) | ![Attendance detained](college-management-system/screenshots/33-attendance-detained.png) |
+| ![Attendance warning](screenshots/32-attendance-warning.png) | ![Attendance detained](screenshots/33-attendance-detained.png) |
 
 ---
 
