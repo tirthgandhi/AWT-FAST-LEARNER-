@@ -1,0 +1,58 @@
+export const initialCourses = [
+  {
+    id: "course-1",
+    code: "CSE501",
+    name: "Advanced Web Technology",
+    semester: 5,
+    description: "React and modern web development",
+    status: "Active",
+  },
+  {
+    id: "course-2",
+    code: "CSE502",
+    name: "Database Management System",
+    semester: 5,
+    description: "Database concepts and queries",
+    status: "Active",
+  },
+  {
+    id: "course-3",
+    code: "CSE503",
+    name: "Computer Networks",
+    semester: 5,
+    description: "Computer networking fundamentals",
+    status: "Inactive",
+  },
+];
+export const initialStudents = [
+  {
+    id: "student-1",
+    name: "Rahul Patel",
+    enrollment: "101",
+    email: "rahul@example.com",
+    courseId: "course-1",
+    semester: 5,
+    gender: "Male",
+    attendance: 86,
+  },
+  {
+    id: "student-2",
+    name: "Priya Shah",
+    enrollment: "102",
+    email: "priya@example.com",
+    courseId: "course-2",
+    semester: 5,
+    gender: "Female",
+    attendance: 69,
+  },
+  {
+    id: "student-3",
+    name: "Amit Kumar",
+    enrollment: "103",
+    email: "amit@example.com",
+    courseId: "course-1",
+    semester: 5,
+    gender: "Male",
+    attendance: 52,
+  },
+];

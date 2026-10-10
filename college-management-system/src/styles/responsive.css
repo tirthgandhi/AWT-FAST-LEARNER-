@@ -1,0 +1,204 @@
+@media (min-width: 1500px) {
+  .workspace {
+    padding: 42px 48px;
+  }
+  .stats-grid {
+    gap: 24px;
+  }
+  .stat {
+    padding: 27px;
+  }
+  .welcome-panel {
+    padding: 34px 40px;
+  }
+  td {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1199px) {
+  .sidebar {
+    width: 210px;
+  }
+  .main-shell {
+    margin-left: 210px;
+  }
+  .workspace {
+    padding: 28px 24px;
+  }
+  .topbar {
+    padding: 0 24px;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .academic-stamp {
+    min-width: 210px;
+    padding-left: 30px;
+    padding-right: 0;
+  }
+  .welcome-panel h2 {
+    font-size: 22px;
+  }
+  .details-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .page-heading h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 260px;
+    transition: transform 0.2s;
+  }
+  .sidebar.is-open {
+    transform: translateX(0);
+  }
+  .main-shell {
+    margin-left: 0;
+  }
+  .mobile-toggle {
+    display: flex;
+    position: fixed;
+    top: 17px;
+    left: 13px;
+    z-index: 8;
+    background: #181a20;
+  }
+  .drawer-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0009;
+    border: 0;
+    z-index: 4;
+  }
+  .topbar {
+    height: 68px;
+    padding: 0 18px 0 62px;
+  }
+  .university {
+    font-size: 10px;
+  }
+  .term {
+    display: none;
+  }
+  .workspace {
+    padding: 25px 16px 16px;
+  }
+  .page-heading {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .page-heading h1 {
+    font-size: 27px;
+  }
+  .page-heading p {
+    font-size: 11px;
+    max-width: 240px;
+  }
+  .page-heading .btn-primary {
+    padding: 10px;
+    font-size: 11px;
+  }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.1px;
+  }
+  .stats-grid {
+    gap: 12px;
+  }
+  .stat {
+    padding: 18px;
+  }
+  .stat strong {
+    font-size: 31px;
+  }
+  .stat-top {
+    font-size: 10px;
+  }
+  .stat small {
+    font-size: 10px;
+  }
+  .welcome-panel {
+    padding: 24px;
+  }
+  .welcome-panel h2 {
+    font-size: 22px;
+  }
+  .academic-stamp {
+    display: none;
+  }
+  .panel-heading {
+    padding: 20px;
+    align-items: flex-start;
+  }
+  .panel-heading .text-link {
+    font-size: 10px;
+  }
+  .panel-heading h2 {
+    font-size: 16px;
+  }
+  .table-footer {
+    padding: 16px 20px;
+  }
+  .table-footer > span {
+    display: none;
+  }
+  .toolbar {
+    flex-direction: column;
+    padding: 0 20px 20px;
+  }
+  .filter {
+    max-width: none;
+  }
+  .course-grid,
+  .details-grid,
+  .course-meta {
+    grid-template-columns: 1fr;
+  }
+  .course-card h2 {
+    min-height: 0;
+  }
+  .course-card p {
+    min-height: 0;
+  }
+  .course-card {
+    padding: 24px;
+  }
+  .course-top {
+    margin-bottom: 24px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .modal {
+    padding: 22px;
+  }
+  .workspace-footer {
+    flex-wrap: wrap;
+    gap: 5px 12px;
+  }
+  .workspace-footer > span:last-child {
+    margin-left: 0;
+    width: 100%;
+  }
+  .toast {
+    top: 78px;
+    right: 16px;
+  }
+  .icon-button {
+    min-width: 40px;
+    min-height: 40px;
+  }
+  .profile-panel {
+    padding: 26px;
+  }
+  .topbar strong {
+    font-size: 11px;
+  }
+}
