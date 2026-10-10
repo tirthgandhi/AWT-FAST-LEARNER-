@@ -10,7 +10,7 @@ Executed on 10 October 2026 with Node.js 26.3.1, npm 11.5.2 and Playwright Chrom
 | npm run lint | Passed with no warnings after the final source check |
 | npm run test:unit | 2 passed |
 | npm test | 5 passed; final full run completed in 16.8 seconds |
-| Screenshot capture | 18 PNGs saved in screenshots/ |
+| Screenshot capture | 18 PNGs saved in college-management-system/screenshots/ |
 | Responsive checks | 390px mobile and 900px tablet: no page-level horizontal overflow |
 | Visual inspection | Desktop dashboard, students, courses, detail pages, mobile dashboard and mobile form reviewed |
 

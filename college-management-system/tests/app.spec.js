@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import fs from "node:fs";
-const shots = "../screenshots";
+const shots = "./screenshots";
 async function studentForm(page, values = {}) {
   const data = {
     "Student name": "Test Student",

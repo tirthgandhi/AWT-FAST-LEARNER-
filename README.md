@@ -1,19 +1,30 @@
 <div align="center">
 
 # 🎓 CampusOS
+
 ### College Course & Student Management System
 
-**A clearer view of your campus.**
+**One workspace for students, courses, and academic progress.**
 
-React · Vite · JavaScript · Liquid Glass · localStorage
+`REACT 19` · `VITE 8` · `JAVASCRIPT` · `CSS3` · `LOCALSTORAGE`
 
-[Quick start](#-quick-start) · [Features](#-features) · [Screenshots](#-screenshots) · [Testing](#-testing)
+[🚀 Get started](#-quick-start) · [✨ Explore features](#-features) · [📸 View screenshots](#-screenshots) · [✅ Run tests](#-testing)
+
+**GSFC University** · Computer Science & Engineering · Semester 5
 
 </div>
 
-![CampusOS dashboard](screenshots/01-dashboard.png)
+![CampusOS dashboard](college-management-system/screenshots/01-dashboard.png)
 
 A complete, responsive academic workspace built for the **Advanced Web Technology Fast Learner assignment at GSFC University**. Manage students and courses, track attendance eligibility, and keep records between browser sessions in a black-and-orange liquid-glass interface.
+
+| 🎓 Students | 📚 Courses | 🚦 Attendance | 💾 Persistence |
+| :---: | :---: | :---: | :---: |
+| Add, edit, search & organize | Manage curriculum & enrollment | Clear eligibility at a glance | Records stay after refresh |
+
+> **Designed for everyday clarity.** Dark glass panels, orange accents, a subtle technical grid, and layouts that adapt from desktop to mobile.
+
+---
 
 ## ✨ Features
 
@@ -72,8 +83,9 @@ For production hosting, serve `dist/` and configure an **SPA fallback to index.h
 ```text
 AWT-FAST-LEARNER-/
 ├── README.md
-├── screenshots/                  # Actual browser captures, embedded below
+├── TESTING.md
 └── college-management-system/
+    ├── screenshots/              # All 18 browser captures
     ├── public/favicon.svg
     ├── src/
     │   ├── components/
@@ -182,57 +194,57 @@ npm run build
 
 Browser tests start the development server automatically. They cover student create/edit/delete/cancel, duplicate enrollments, email and attendance validation, combined search/filtering, course create/edit/delete, assigned-course protection, detail pages, refresh persistence, empty arrays, invalid routes, malformed and denied storage, mobile navigation, and page overflow at mobile/tablet widths.
 
-The screenshot workflow covers all five page types plus forms, the missing-record state, and responsive layouts. Screenshots use deterministic sample records and are saved in the repository's separate **screenshots/** folder. Tests also check for uncaught browser errors during student and screenshot workflows.
+The screenshot workflow covers all five page types plus forms, the missing-record state, and responsive layouts. Screenshots use deterministic sample records and are saved in the **college-management-system/screenshots/** folder. Tests also check for uncaught browser errors during student and screenshot workflows.
 
 **Verification:** installation, development-server startup, production build, both unit tests, and all five Chromium browser tests were executed successfully during implementation. See [verification notes](TESTING.md) for the final recorded check results. Browser coverage is Chromium; other browser engines have not been tested.
 
 ## 📸 Screenshots
 
-All images below are actual screenshots of the running application. Click an image to inspect it at full size.
+**18 real browser captures · 5 application pages · Desktop, tablet & mobile**
+
+All images below come from the running application. The dashboard is featured at the top of this README; the remaining pages and forms appear below. Open any image to inspect the full-size capture.
+
+[Browse the screenshot folder](college-management-system/screenshots/)
 
 ### Desktop pages
 
 | Student directory | Student details |
 |---|---|
-| ![Student directory](screenshots/02-students.png) | ![Student details](screenshots/03-student-details.png) |
+| ![Student directory](college-management-system/screenshots/02-students.png) | ![Student details](college-management-system/screenshots/03-student-details.png) |
 
 | Course catalog | Course details |
 |---|---|
-| ![Courses](screenshots/04-courses.png) | ![Course details](screenshots/05-course-details.png) |
+| ![Courses](college-management-system/screenshots/04-courses.png) | ![Course details](college-management-system/screenshots/05-course-details.png) |
 
-<details>
-<summary><strong>Forms and missing-record screen</strong></summary>
+### Forms & record handling
 
 | Add student | Edit student |
 |---|---|
-| ![Add student](screenshots/06-add-student.png) | ![Edit student](screenshots/07-edit-student.png) |
+| ![Add student](college-management-system/screenshots/06-add-student.png) | ![Edit student](college-management-system/screenshots/07-edit-student.png) |
 
 | Add course | Edit course |
 |---|---|
-| ![Add course](screenshots/08-add-course.png) | ![Edit course](screenshots/09-edit-course.png) |
+| ![Add course](college-management-system/screenshots/08-add-course.png) | ![Edit course](college-management-system/screenshots/09-edit-course.png) |
 
-![Record Not Found](screenshots/10-record-not-found.png)
+![Record Not Found](college-management-system/screenshots/10-record-not-found.png)
 
-</details>
+### Mobile & tablet
 
-<details>
-<summary><strong>Mobile & tablet gallery</strong></summary>
+Responsive cards, a collapsible navigation drawer, and forms designed for smaller screens.
 
 | Dashboard | Students | Courses |
 |---|---|---|
-| ![Mobile dashboard](screenshots/11-mobile-dashboard.png) | ![Mobile students](screenshots/12-mobile-students.png) | ![Mobile courses](screenshots/13-mobile-courses.png) |
+| ![Mobile dashboard](college-management-system/screenshots/11-mobile-dashboard.png) | ![Mobile students](college-management-system/screenshots/12-mobile-students.png) | ![Mobile courses](college-management-system/screenshots/13-mobile-courses.png) |
 
 | Student details | Course details |
 |---|---|
-| ![Mobile student details](screenshots/14-mobile-student-details.png) | ![Mobile course details](screenshots/15-mobile-course-details.png) |
+| ![Mobile student details](college-management-system/screenshots/14-mobile-student-details.png) | ![Mobile course details](college-management-system/screenshots/15-mobile-course-details.png) |
 
 | Navigation drawer | Mobile form |
 |---|---|
-| ![Mobile navigation](screenshots/16-mobile-navigation.png) | ![Mobile form](screenshots/17-mobile-form.png) |
+| ![Mobile navigation](college-management-system/screenshots/16-mobile-navigation.png) | ![Mobile form](college-management-system/screenshots/17-mobile-form.png) |
 
-![Tablet dashboard](screenshots/18-tablet-dashboard.png)
-
-</details>
+![Tablet dashboard](college-management-system/screenshots/18-tablet-dashboard.png)
 
 ## 🎓 Academic details
 
