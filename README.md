@@ -8,7 +8,7 @@
 
 `REACT 19` · `VITE 8` · `JAVASCRIPT` · `CSS3` · `LOCALSTORAGE`
 
-[🚀 Get started](#-quick-start) · [✨ Explore features](#-features) · [📸 View screenshots](#-screenshots) · [✅ Run tests](#-testing)
+[🚀 Get started](#-quick-start) · [🛠 Tech stack](#-technology-stack) · [✨ Features](#-features) · [📸 Screenshots](#-screenshots) · [✅ Tests](#-testing)
 
 **GSFC University** · Computer Science & Engineering · Semester 5
 
@@ -39,18 +39,59 @@ A complete, responsive academic workspace built for the **Advanced Web Technolog
 
 ## 🛠 Technology stack
 
-| Technology | Purpose |
-|---|---|
-| React.js 19 | Functional components, shared state, reusable UI |
-| Vite 8 | Development server and production builds |
-| JavaScript ES6+ & JSX | Application logic and declarative templates |
-| React Router DOM 7 | Client-side navigation and dynamic detail routes |
-| CSS3 | Custom design tokens, Grid/Flexbox, liquid glass, responsive layouts |
-| Lucide React | Lightweight interface icons |
-| React Hooks | useState, useEffect, useMemo, useRef, useId |
-| Browser localStorage | Student and course persistence |
-| Playwright (development only) | Functional browser checks and screenshot capture |
-| Node.js test runner & Oxlint | Unit checks and source linting |
+<div align="center">
+
+**⚛️ React · ⚡ Vite · 🟨 JavaScript · 🎨 CSS3**
+
+*A focused frontend stack, from reusable components to persistent browser data.*
+
+</div>
+
+### 🖥️ Application & interface
+
+| Technology | Role in CampusOS | Used for |
+| :--- | :--- | :--- |
+| **React.js 19 + React DOM** | User interface | Reusable components, student tables, course cards, and interactive forms |
+| **JavaScript ES6+** | Application logic | Validation, CRUD operations, array transformations, and attendance calculations |
+| **JSX + HTML5** | Page structure | Declarative templates, semantic forms, tables, and dialogs |
+| **CSS3** | Visual design | Black-and-orange liquid glass, design tokens, Grid, Flexbox, and responsive layouts |
+| **React Router DOM 7** | Navigation | Dashboard, student/course directories, and dynamic detail routes |
+| **Lucide React** | Iconography | Consistent navigation icons and action controls |
+
+### 🧠 State & browser data
+
+| React concept / browser API | Purpose |
+| :--- | :--- |
+| **useState** | Records, controlled inputs, search, filters, and dialogs |
+| **useEffect** | Storage synchronization, dialog lifecycle, and notification cleanup |
+| **useMemo + React.memo** | Reuse derived calculations and skip unchanged component renders |
+| **useRef + useId** | Dialog references and accessible title identifiers |
+| **localStorage** | Persist student and course arrays between browser sessions |
+
+> **Data stays in your browser.** CampusOS uses localStorage rather than a backend or database. Records are specific to the browser and site origin.
+
+### ⚙️ Development & quality tools
+
+| Tool | Purpose |
+| :--- | :--- |
+| **Vite 8 + React plugin** | Fast development server, React integration, and production builds |
+| **Node.js + npm** | Run development tools, install packages, and execute project scripts |
+| **Playwright** | Browser workflow checks and all 18 page/form screenshots |
+| **Node.js test runner** | Unit tests for attendance boundaries and storage behavior |
+| **Oxlint** | JavaScript and React source checks |
+| **Git + GitHub** | Version history and repository hosting |
+
+### 📦 Package files explained
+
+These files support the stack and are committed alongside the application source:
+
+| File | What it contains | Why it matters |
+| :--- | :--- | :--- |
+| [**package.json**](college-management-system/package.json) | Project metadata, dependency version ranges, and scripts such as `dev`, `build`, and `test` | Defines which packages and commands the project needs |
+| [**package-lock.json**](college-management-system/package-lock.json) | Resolved dependency versions, dependency tree, and integrity information | Keeps dependency installation reproducible with `npm ci` |
+| [**vite.config.js**](college-management-system/vite.config.js) | Vite configuration and the React plugin | Connects the React source to the development/build pipeline |
+
+**Useful distinction:** `package.json` declares dependencies; `package-lock.json` records their resolved versions. Both belong in the repository.
 
 **No TypeScript, Tailwind, Bootstrap, Sass, UI framework, Redux, database, or backend.**
 
