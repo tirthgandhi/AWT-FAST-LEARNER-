@@ -76,7 +76,7 @@ A complete, responsive academic workspace built for the **Advanced Web Technolog
 | :--- | :--- |
 | **Vite 8 + React plugin** | Fast development server, React integration, and production builds |
 | **Node.js + npm** | Run development tools, install packages, and execute project scripts |
-| **Playwright** | Browser workflow checks and all 18 page/form screenshots |
+| **Playwright** | Browser workflow checks and all 33 page/form screenshots |
 | **Node.js test runner** | Unit tests for attendance boundaries and storage behavior |
 | **Oxlint** | JavaScript and React source checks |
 | **Git + GitHub** | Version history and repository hosting |
@@ -126,7 +126,7 @@ AWT-FAST-LEARNER-/
 ├── README.md
 ├── TESTING.md
 └── college-management-system/
-    ├── screenshots/              # All 18 browser captures
+    ├── screenshots/              # All 33 browser captures
     ├── public/favicon.svg
     ├── src/
     │   ├── components/
@@ -160,6 +160,7 @@ AWT-FAST-LEARNER-/
     │   └── main.jsx
     ├── tests/
     │   ├── app.spec.js
+    │   ├── features.spec.js
     │   └── unit.test.js
     ├── .gitignore
     ├── .oxlintrc.json
@@ -223,7 +224,7 @@ Exactly **60 is Warning** and exactly **75 is Eligible**. Every attendance badge
 
 ## ✅ Testing
 
-The project includes two Node unit tests and five Playwright browser workflows. Run:
+The project includes two Node unit tests and eight Playwright browser workflows. Run:
 
 ```bash
 npm run test:unit
@@ -241,13 +242,66 @@ The screenshot workflow covers all five page types plus forms, the missing-recor
 
 ## 📸 Screenshots
 
-**18 real browser captures · 5 application pages · Desktop, tablet & mobile**
+**33 real browser captures · 5 application pages · Desktop, tablet & mobile**
 
 All images below come from the running application. The dashboard is featured at the top of this README; the remaining pages and forms appear below. Open any image to inspect the full-size capture.
 
 [Browse the screenshot folder](screenshots/)
 
-### Desktop pages
+### Requested feature demonstrations
+
+These screenshots show the controls in use and the resulting records. Deletions and course creation were performed in isolated test-browser storage, without changing personal browser data.
+
+| Requirement | Screenshot evidence |
+| :--- | :--- |
+| Display students | [Student directory](screenshots/19-display-students.png) |
+| Delete student | [Confirmation](screenshots/22-delete-student-confirmation.png) · [Successful deletion](screenshots/23-student-deleted.png) |
+| Search student | [Search for Priya](screenshots/20-search-student.png) |
+| Filter by course | [Advanced Web Technology students](screenshots/21-filter-students-by-course.png) |
+| Add course | [Completed form](screenshots/24-add-course-filled-form.png) · [New course in catalog](screenshots/25-course-added.png) |
+| Delete course | [Confirmation](screenshots/29-delete-course-confirmation.png) · [Successful deletion](screenshots/30-course-deleted.png) · [Assigned-course protection](screenshots/31-assigned-course-delete-protection.png) |
+| Search course | [Database search result](screenshots/26-search-course.png) |
+| Filter course | [Inactive courses](screenshots/27-filter-course.png) |
+| View course details | [Course and enrolled students](screenshots/28-view-course-details.png) |
+| Attendance warning | [69% — Warning](screenshots/32-attendance-warning.png) · [52% — Detained](screenshots/33-attendance-detained.png) |
+
+#### Student operations
+
+| Display students | Search student |
+| :---: | :---: |
+| ![Student directory](screenshots/19-display-students.png) | ![Search student](screenshots/20-search-student.png) |
+
+| Filter by course | Delete confirmation |
+| :---: | :---: |
+| ![Filter students by course](screenshots/21-filter-students-by-course.png) | ![Delete student confirmation](screenshots/22-delete-student-confirmation.png) |
+
+![Student successfully deleted](screenshots/23-student-deleted.png)
+
+#### Course operations
+
+| Add course form | Course added |
+| :---: | :---: |
+| ![Filled add course form](screenshots/24-add-course-filled-form.png) | ![Course added](screenshots/25-course-added.png) |
+
+| Search course | Filter inactive courses |
+| :---: | :---: |
+| ![Search course](screenshots/26-search-course.png) | ![Filter course](screenshots/27-filter-course.png) |
+
+| Course details | Delete confirmation |
+| :---: | :---: |
+| ![Course details](screenshots/28-view-course-details.png) | ![Delete course confirmation](screenshots/29-delete-course-confirmation.png) |
+
+| Course deleted | Assigned course protected |
+| :---: | :---: |
+| ![Course deleted](screenshots/30-course-deleted.png) | ![Assigned course deletion blocked](screenshots/31-assigned-course-delete-protection.png) |
+
+#### Attendance warnings
+
+| Warning — attendance 69% | Detained — attendance 52% |
+| :---: | :---: |
+| ![Attendance warning](screenshots/32-attendance-warning.png) | ![Attendance detained](screenshots/33-attendance-detained.png) |
+
+### Page overview
 
 | Student directory | Student details |
 |---|---|
